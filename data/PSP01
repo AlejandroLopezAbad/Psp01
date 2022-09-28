@@ -1,0 +1,42 @@
+-----Programacion multihilo------
+Un hilo se ejecuta secuencialmente
+pero a su vez un hilo puede llamar a otro hilo y otros procesos
+como lo maneja el sistema perativo tiene su propio contador
+perocomparte el mismo espacio de direcciones ( memoria) porque si escribo o jodo memoria que estan utilizando otros
+vamos pozo
+COn los hilos puedo compartir mismo ficheros, objetos , Si el proceso es costoso de levantar el hilo es mas rapido , son mas ligeros
+que los procesos, cuando se aconseja usar hilos : Aplicacion deba hacer varias cosas a a vez o se ejecuta en un mutli procesador
+
+------Estados de un hilo-------
+Yo puedo crear un hilo y pararlo con stop(lo mata, esta muerto),
+Si hago start() ya esta ejecutandose , menos muerto puede estar dormido y suspendido estar esperando o bloqueado, (Bloqueado es el que da problemas)
+dormir puedo decidir cuanto me duermo y tengo mi propia alarma y me despierto solo,
+si alguien me suspende boy a estar suspendido hasta que alguien me avise
+esperando quiere decir a que un recurso de los que necesito este disponible para poder utilizar esa zona reservada de memoria
+y bloqueado no hay narices a controlarlo, cuando se bloquea solo se puede desbloquear él
+el metodo que hace que un hilo pueda trabajar es el metodo run,
+
+-------------------------
+La clase thread
+tenemos runnable --> no soporta herencia multiple
+threadDeath
+ThreadGruop
+Object
+Executor y executors service
+
+que diferencia hay entre hacer un thread o que implemente runnable
+la unica diferencia es que runnable llama al metodo run y el thread al metodo start()
+
+Patron thread Pool
+Este praton sirve para ahprrar recurso y ofrece paralelismo , asiq ue vamos a ejecutar executor service
+le vamos dando tareas y el tien 5 hilos para ejecutarla entonces se lo va repartiendo entre lo que tiene disponible
+
+
+
+Max 4 cajas
+clientes-> Carro puede tener entre 5-15 productos-> EL producto vale entre 1-10 ,
+el tiempo de procesamiento es 1 segundo por el precio, voy a tener entre 5 y 10 clientes
+medir el tiempo total de ejecucion
+una clase caja que implemente runnable y en el metodo de runnable le metemos el cliente que va a procesar
+como se suele ahcer:
+los clientes entran en una cola,

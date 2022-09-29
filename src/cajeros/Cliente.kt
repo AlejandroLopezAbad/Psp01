@@ -11,7 +11,7 @@ class Cliente(var productos:Productos ) {
 }
 fun randomPro(){
     var productos:Productos
-    productos.numProductos=Random.nextInt(5..15)
+  //  productos.numProductos=Random.nextInt(5..15)
 
 
 }

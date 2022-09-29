@@ -1,0 +1,13 @@
+------------------------------AQUI EMPIEZA LOS EJERCICIOS--------------------------------------
+hay que cojer un csv y leerlo dos veces y lo vamos a hacer de forma secuencial
+y con promesas
+procesar dos csv uno secuencial y pintarlos en la pantalla con promesas
+promesas (invoke all)
+
+descargar el rss devolver una promesa( el ultimo)
+ping con completable future
+
+
+de un fichero gradle sacar la version de kotlin y la version de copilacion(jvm)
+
+
